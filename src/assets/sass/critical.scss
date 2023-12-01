@@ -22,12 +22,7 @@ body {background: url();
         .cs-picture {
             /* Background Image */
             background-color: var(--primaryDark);
-            width: 100%;
-            height: 100%;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
+      
             z-index: -2;
 
             &:before {
@@ -241,6 +236,7 @@ body {background: url();
                 width: calc(88 / 16 * 1em);
                 height: calc(88 / 16 * 1em);
                 margin: auto;
+                color: #fff;
                 margin-bottom: calc(23 / 16 * 1em);
                 background: var(--primary);
                 border-radius: 50%;
