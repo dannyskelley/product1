@@ -42,7 +42,7 @@
                 url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
-    body {font-family: "Poppins", Arial, sans-serif;}
+    body {font-family: "Poppins", Arial, sans-serif; padding:0px; margin: 0px;}
 
 * {transition: all ease .1s;}
 
@@ -50,9 +50,10 @@
     --primary-color: #302AE6;
 
 }
-a {color:blue}
+a {color:var(--primary-color)}
 
-.dropdown .li-link:hover + .cs-drop-ul {display: block;}
+footer {background-color:var(--primary-color)}
+
 .skip {visibility: hidden;}
 
 /*-- -------------------------- -->
@@ -194,3 +195,12 @@ input[type=checkbox]:checked ~  nav {display: block;}
     width: 22px;
     transform: translateX(-8px) rotate(45deg) translateY(-8px);
   }
+
+
+
+
+
+  .footerLogo {filter: grayscale(1) brightness(1000%); max-width: 100px;}
+
+  .cs-drop-ul {display: hidden;}
+  .dropdown .li-link:hover + .cs-drop-ul {display: block;}
