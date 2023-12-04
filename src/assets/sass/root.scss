@@ -230,19 +230,24 @@ body {
     background-repeat: no-repeat;
     background-position: top right;
 }
-h1 {font-size: 62px; line-height: 58px; margin: 0px 0px 30px; padding: 0px;;}
+h1 {font-size: 62px; line-height: 58px; margin: 0px 0px 30px; padding: 0px;}
 
 .content {padding: 30px;}
 .sectionTwo {background-color:var(--background-color); color:var(--textOnBackground-color)}
+
+.sectionContent {max-width: 500px; margin: auto; padding: 50px;;}
 .headerContent {color:white; padding-bottom: 200px;}
 header {text-align: center;}
 .logo {filter: grayscale(1) brightness(1000%); margin-top:20px;}
 
+.flourish { margin-bottom:50px;background-color: var(--primary-color); width: 100px; height: 9px; display: block; border-radius: 999px 0px 999px 0px;}
+
 
 @media (min-width: 1250px) {
     body {background-size: cover;}
-    h1 {font-size: 102px; line-height: 102px;}
+    h1 {font-size: 102px; line-height: 102px; text-align: center;}
     .headerContent {max-width: 800px; text-align: center; margin:100px auto;
+        .sectionContent {text-align: left;;}
     }
   }
   
