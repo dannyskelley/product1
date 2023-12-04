@@ -42,19 +42,29 @@
                 url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
-    body {font-family: "Poppins", Arial, sans-serif; padding:0px; margin: 0px;}
+    body {
+        font-family: "Poppins", Arial, sans-serif; padding:0px; margin: 0px;
+    }
+    .button {color:white;margin:40px 10px 0px 0px;border-radius: 999px;outline-width: 2px; outline-style: solid;  text-decoration: none; padding: 10px 20px; display: inline-block; color: var(--textOnPrimary-color);}
+.buttonPrimary {background-color: var( --primary-color); outline-color:var(--primary-color);}
+    .buttonSecondary {color:white; outline-color: white;}
+    .active {color:red}
 
 * {transition: all ease .1s;}
 
 :root {
-    --primary-color: #302AE6;
+    --primary-color: #9f2435;
+    --textOnPrimary-color: #FFFFFF;
+
+    --background-color: #fff;
+    --textOnBackground-color: #1a1a1a;
 
 }
 a {color:var(--primary-color)}
 
 footer {background-color:var(--primary-color)}
 
-.skip {visibility: hidden;}
+.skip {display: none;}
 
 /*-- -------------------------- -->
 <---      Dark Mode Toggle      -->
@@ -197,10 +207,42 @@ input[type=checkbox]:checked ~  nav {display: block;}
   }
 
 
+.logo {max-height: 50px;}
 
 
+.footerLogo {filter: grayscale(1) brightness(1000%); max-width: 100px;}
 
-  .footerLogo {filter: grayscale(1) brightness(1000%); max-width: 100px;}
+.cs-drop-ul {display: hidden;}
+.dropdown .li-link:hover + .cs-drop-ul {display: block;}
+.menu {text-align:left; position: absolute; left: 0px;top:0px; bottom:0px; right: 0px; z-index:1; background-color: var(--primary-color);}
+.menu a {color:white;font-size:32px; text-decoration: none;}
+.menu ul {list-style: none; padding:0px;}
+.menu ul li {margin-bottom:30px; padding-left:30px;}
+.active {border-left:10px solid white;padding-left:30px;}
 
-  .cs-drop-ul {display: hidden;}
-  .dropdown .li-link:hover + .cs-drop-ul {display: block;}
+body {
+    background-color: #ccc;
+    position: relative;
+    background-attachment: fixed;
+    background: url(/assets/images/bg1.jpg);
+    background-attachment: fixed;
+    background-size: 150vh;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+h1 {font-size: 62px; line-height: 58px; margin: 0px 0px 30px; padding: 0px;;}
+
+.content {padding: 30px;}
+.sectionTwo {background-color:var(--background-color); color:var(--textOnBackground-color)}
+.headerContent {color:white; padding-bottom: 200px;}
+header {text-align: center;}
+.logo {filter: grayscale(1) brightness(1000%); margin-top:20px;}
+
+
+@media (min-width: 1250px) {
+    body {background-size: cover;}
+    h1 {font-size: 102px; line-height: 102px;}
+    .headerContent {max-width: 800px; text-align: center; margin:100px auto;
+    }
+  }
+  

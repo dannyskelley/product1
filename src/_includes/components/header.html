@@ -5,7 +5,7 @@
 <!--                 Navigation                   -->
 <!-- ============================================ -->
 
-<img class="logo" src="/assets/svgs/logo-black.svg">
+<a href="/"><img class="logo" src="/assets/svgs/logo-black.svg"></a>
 
 <input type="checkbox" id="checkbox_toggle">
 <label for="checkbox_toggle" class="hamburger">
@@ -26,7 +26,7 @@
         {% set hasChild = entry.children.length %}
 
         {# If this page is a dropdown, give it the appropriate classes, icons and accessibility attributes#}
-        <li class="li {% if hasChild %} dropdown {% endif %}" {% if hasChild %} tabindex="0"{% endif %}>
+        <li class="li{% if hasChild %} dropdown {% endif %}" {% if hasChild %} tabindex="0"{% endif %}>
 
           {# Similarly, if the link is active, apply the necessary classes #}
           <a href="{{ entry.url }}" class="li-link {% if entry.url == page.url %} active {% endif %}">
